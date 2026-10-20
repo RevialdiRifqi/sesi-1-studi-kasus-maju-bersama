@@ -1,0 +1,5 @@
+jenis_anomali,flag_rule,flag_iforest,flag_hybrid
+diskon_berlebihan,1.0,0.981,1.0
+harga_tidak_konsisten,1.0,0.827,1.0
+qty_tidak_wajar,1.0,1.0,1.0
+total_tidak_sesuai,1.0,1.0,1.0

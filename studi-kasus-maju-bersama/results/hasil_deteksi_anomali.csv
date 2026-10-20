@@ -1,0 +1,5 @@
+metode,ditandai,precision,recall,f1
+Rule-based,280,0.75,1.0,0.857
+Isolation Forest,240,0.833,0.952,0.889
+Hybrid (rule ATAU iForest),314,0.669,1.0,0.802
+Konsensus (rule DAN iForest),206,0.971,0.952,0.962
