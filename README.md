@@ -1,6 +1,8 @@
 # Studi Kasus: Make Sense of Data with Analysis and AI
 ### Analisis Data Transaksi PT Maju Bersama (Distributor Fiktif)
 
+**Penulis:** [Revialdi Rifqi Ramadhan Permana] | **NPM:** [G1A023066]
+
 Studi kasus ini dibuat dari materi **Informatics Practitioner Lecture Series – Sesi 1** (mata kuliah DEEPL),
 pemateri **Andria Arisal (BRIN)**, topik *Make Sense of Data with Analysis and AI*.
 Seluruh data adalah **data sintetis** yang dibangkitkan oleh kode di repo ini; tidak ada data perusahaan nyata.
@@ -34,7 +36,7 @@ python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\act
 pip install -r requirements.txt
 python run_all.py
 ```
-Hasil tersimpan di folder `results/`. Data mentah dibuat ulang di `data/transaksi_raw.csv` (seed tetap, hasil reproducible).
+Hasil tersimpan di folder `results/`. Data mentah dibuat ulang di `data/transaksi_raw.csv` (seed tetap). Angka model berbasis pohon (Random Forest) dapat bergeser sedikit tergantung versi library; tabel di bawah dihasilkan dengan scikit-learn 1.9.1.
 
 ## 4. Hasil Utama (seed 42)
 
@@ -50,7 +52,7 @@ Hanya ±14,5% invoice yang terlambat.
 | Logistic Regression | 0,863 | 0,739 | 0,078 | 0,142 | 0,724 |
 | Random Forest | 0,854 | 0,478 | 0,101 | 0,167 | 0,689 |
 | Logistic Reg + class_weight | 0,633 | 0,239 | 0,705 | 0,357 | 0,724 |
-| Random Forest + class_weight | 0,790 | 0,329 | 0,433 | 0,374 | 0,720 |
+| Random Forest + class_weight | 0,794 | 0,338 | 0,442 | 0,383 | 0,721 |
 | **Decision Tree + leakage** | **1,000** | **1,000** | **1,000** | **1,000** | **1,000** |
 
 **Pembelajaran**
